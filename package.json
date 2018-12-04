@@ -46,9 +46,13 @@
     "react-moment": "^0.7.0"
   },
   "jest": {
+    "testURL": "http://localhost:8080",
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
       "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    }
+    },
+    "modulePaths": [
+      "<rootDir>/src/"
+    ]
   }
 }

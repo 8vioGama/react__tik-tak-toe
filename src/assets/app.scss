@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.xs-os {
+  margin: 4em 0;
+}
+
+.game__board {
+
+  .board__status {
+    margin-bottom: 1em;
+  }
+
+  .board__row {
+    
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
+
+  .board__square {
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+    border: 1px solid #999;
+    margin-right: -1px;
+    text-align: center;
+    margin-top: -1px;
+    cursor: pointer;
+    font-size: 3em;
+    float: left;
+    height: 2em;
+    padding: 0;
+    width: 2em;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+
+  .game__info {
+    margin-left: 20px;
+  }
+
+  .game__endGame {
+    position: absolute;
+    justify-content: center;
+    width: 18em;
+    height: 18em;
+    display: flex;
+    align-items: center;
+    background: #ffffffa6;
+
+    .endGame__endStatus {
+      background: #7fbbc1;
+      padding: 1em 3em;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+
+  .game__buttons {
+    list-style: none;
+    padding: 0;
+
+    .game__button {
+      width: 100%;
+      padding: 0.5em;
+      border-radius: 15px;
+      margin: 0.2em 0;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.blue {
+  background: #7fbbc1;
+}
